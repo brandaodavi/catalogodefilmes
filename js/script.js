@@ -29,14 +29,18 @@ const carregarLista = (json) =>{
     }
     lista.innerHTML = "";
     json.Search.forEach(element => {
-        console.log(element);
-
-        
-
         let item = document.createElement('div');
         item.classList.add('item');
 
-        item.innerHTML = `<img src="${element.Poster}"/><h2>${element.Title}</h2> <h4>(${element.Year})</h4>`;
+        let poster;
+
+        if(element.Poster === "N/A"){
+            poster = 'img/not-found.jpg';
+        }else{
+            poster = element.Poster;
+        }
+    
+        item.innerHTML = `<img src="${poster}"/><h2>${element.Title}</h2> <h4>(${element.Year})</h4>`;
 
         lista.appendChild(item);
     });
