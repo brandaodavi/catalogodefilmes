@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+span{
+    color: rgb(172, 26, 26);
+}
+
+h1{
+    font-size: 2.5vw;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+}
+
+
+form{
+    margin: 10px;
+    padding: 10px;
+    border: 0.2px solid cornflowerblue;
+    border-radius: 20px;
+    display: flex;
+}
+
+form button{
+    padding: 5px 10px;
+    background: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background: blue;
+    transition: 1s all;
+}
+
+form input#pesquisa{
+    padding: 5px;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+div.lista{
+    margin-top: 10px;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.item{
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    margin: 5px;
+}
+
+div.item:hover{
+    transition: .2s all;
+    background: lightgray;
+    cursor: pointer;
+}
+
+div.item img{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+}
+
